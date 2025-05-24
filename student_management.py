@@ -27,12 +27,13 @@ def forward_to_welcome_page():
     welcome_page()
 
 
-login_student_icon = load_resized_image('C:/Users/pc/Desktop/Courses/POO/project/images/student.png')
-login_admin_icon = load_resized_image('C:/Users/pc/Desktop/Courses/POO/project/images/settings.png')
-add_student_icon = load_resized_image('C:/Users/pc/Desktop/Courses/POO/project/images/add.png')
-locked_icon=load_resized_image('C:/Users/pc/Desktop/Courses/POO/project/images/locked.png',size=(30, 30))
-unlocked_icon=load_resized_image('C:/Users/pc/Desktop/Courses/POO/project/images/unlocked.png',size=(30, 30))
-add_student_pic_icon = load_resized_image('C:/Users/pc/Desktop/Courses/POO/project/images/add.png', size=(100, 100))
+login_student_icon = load_resized_image('student.png')
+login_admin_icon = load_resized_image('settings.png')
+add_student_icon = load_resized_image('add.png')
+locked_icon = load_resized_image('locked.png', size=(30, 30))
+unlocked_icon = load_resized_image('unlocked.png', size=(30, 30))
+add_student_pic_icon = load_resized_image('add.png', size=(100, 100))
+
 
 if not os.path.exists(ADMIN_FILE):
     with open(ADMIN_FILE, 'w', newline='', encoding='utf-8') as f:
